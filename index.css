@@ -1,0 +1,134 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: AvenirBook;
+    src: url(AvenirLTStd-Book.otf);
+}
+
+body {
+    background-color: #2e2e4e;
+}
+
+.box {
+    box-shadow: 0px 2px 8px 1px rgba(0,0,0,.3);
+    background-color: #849ee6;
+    border-radius: 5px;
+    width: 100%;
+    font-family: AvenirBook;
+    color: #2e2e4e;
+}
+
+#boxes {
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 5px;
+    margin-top: 20px;
+}
+ 
+#content {
+    padding: 10px;
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#name {
+    font-size: 2.4em;
+}
+
+#text {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    height: 40%;
+    align-self: center;
+}
+
+#haiku {
+    font-size: 25px;
+    font-style: italic;
+}
+
+#links {
+    display: block;
+    background-color: #b4c3ec !important;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#links:hover {
+    background-color: #d4dcf3 !important;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#links:active {
+    background-color:  #2e2e4e !important;
+    color: white;
+}
+
+#avatar {
+    width: 300px;
+    margin-top: 40px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: -3px 2px 7px 1px rgb(0 0 0 / 0.54);
+}
+
+#links {
+    background-color: #849ee6;
+    border-radius: 5px;
+}
+
+@media only screen and (min-width: 1000px) {
+    #boxes {
+        width: 950px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #content {
+        grid-template-columns: 1fr !important;
+        justify-items: center;
+    }
+
+    #boxes {
+        max-width: 70%;
+    }
+
+    #text {
+        justify-items: center;
+        row-gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    #name {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #boxes {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #boxes {
+        max-width: 100%;
+    }
+
+    #name {
+        font-size: 1.4em;
+    }
+}
