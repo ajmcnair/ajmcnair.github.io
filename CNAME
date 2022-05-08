@@ -1,1 +1,4 @@
-<delete text and brackets>ajmcnair.com
+<delete all lines except for last one - ajmcnair.com>
+<add cname record to cloudflare - name: www, target: ajmcnair.github.io>
+<add four A records to cloudflare - 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153>
+ajmcnair.com
